@@ -39,7 +39,27 @@ var morphing = anime({
   loop: true
 });
 
+document.getElementById('contact').addEventListener('submit', async function (e) {
+  e.preventDefault();
 
+  const formData = new FormData(this);
+
+  const response = await fetch('/send-email', {
+      method: 'POST',
+      body: JSON.stringify({
+          name: formData.get('name'),
+          email: formData.get('email'),
+          phone: formData.get('phone'),
+          message: formData.get('message')
+      }),
+      headers: {
+          'Content-Type': 'application/json'
+      }
+  });
+
+  const result = await response.json();
+  alert(result.message);
+});
 
 
 

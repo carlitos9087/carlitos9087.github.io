@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -22,22 +23,28 @@
     <section id="about">
         <div class="container">
             <h2>Sobre Mim</h2>
-            <p>Sou estudante de Análise e Desenvolvimento de Sistemas na [sua instituição] e estou desenvolvendo habilidades em bioinformática, engenharia de dados e metodologias ágeis. Atualmente, trabalho em um estágio na Sanofi/Opella, onde estou aprendendo a lidar com grandes volumes de dados e tecnologias de Engenharia de Dados.</p>
-            <p>Meu objetivo é contribuir para soluções inovadoras no campo de dados e bioinformática, aproveitando minha paixão por tecnologia e aprendizado contínuo.</p>
+            <p>Sou estudante de Análise e Desenvolvimento de Sistemas na [sua instituição] e estou desenvolvendo
+                habilidades em bioinformática, engenharia de dados e metodologias ágeis. Atualmente, trabalho em um
+                estágio na Sanofi/Opella, onde estou aprendendo a lidar com grandes volumes de dados e tecnologias de
+                Engenharia de Dados.</p>
+            <p>Meu objetivo é contribuir para soluções inovadoras no campo de dados e bioinformática, aproveitando minha
+                paixão por tecnologia e aprendizado contínuo.</p>
         </div>
     </section>
 
     <section id="projects">
         <div class="container">
             <h2>Projetos</h2>
-            
+
             <div class="project">
                 <h3>Sistema de Mapeamento e Rotas com PySide6</h3>
-                <p>Aplicação desenvolvida para calcular rotas otimizadas utilizando algoritmos como Dijkstra e TSP. <a href="#">Veja no GitHub</a></p>
+                <p>Aplicação desenvolvida para calcular rotas otimizadas utilizando algoritmos como Dijkstra e TSP. <a
+                        href="#">Veja no GitHub</a></p>
             </div>
             <div class="project">
                 <h3>Análise Bioinformática de ATAC-seq</h3>
-                <p>Projeto de iniciação científica focado em avaliar a maquinaria de acetilação proteica na resposta de células imunes. <a href="#">Veja no GitHub</a></p>
+                <p>Projeto de iniciação científica focado em avaliar a maquinaria de acetilação proteica na resposta de
+                    células imunes. <a href="#">Veja no GitHub</a></p>
             </div>
             <!-- Adicione mais projetos conforme necessário -->
         </div>
@@ -57,95 +64,83 @@
 
 
     <section id="contact">
-    
-        <div class="container">
-            
 
-            <form id="contact" action="" method="post">
-            <h3>Contact Form</h3>
-            <h4>Contact us for custom quote</h4>
-            <fieldset>
-            <input placeholder="Your name" type="text" tabindex="1" required autofocus>
-            </fieldset>
-            <fieldset>
-            <input placeholder="Your Email Address" type="email" tabindex="2" required>
-            </fieldset>
-            <fieldset>
-            <input placeholder="Your Phone Number (optional)" type="tel" tabindex="3" required>
-            </fieldset>
-            <fieldset>
-            <input placeholder="Your Web Site (optional)" type="url" tabindex="4" required>
-            </fieldset>
-            <fieldset>
-            <textarea placeholder="Type your message here...." tabindex="5" required></textarea>
-            </fieldset>
-            <fieldset>
-            <button name="submit" type="submit" id="contact-submit" data-submit="...Sending">Submit</button>
-            </fieldset>
+        <div class="container">
+
+
+            <form id="contact" name="contact" method="POST" data-netlify="true">
+                <h3>Contact Form</h3>
+                <h4>Contact us for a custom quote</h4>
+                <fieldset>
+                    <input name="name" placeholder="Your name" type="text" tabindex="1" required autofocus>
+                </fieldset>
+                <fieldset>
+                    <input name="email" placeholder="Your Email Address" type="email" tabindex="2" required>
+                </fieldset>
+                <fieldset>
+                    <input name="phone" placeholder="Your Phone Number (optional)" type="tel" tabindex="3">
+                </fieldset>
+                <fieldset>
+                    <textarea name="message" placeholder="Type your message here...." tabindex="5" required></textarea>
+                </fieldset>
+                <fieldset>
+                    <button type="submit" id="contact-submit">Submit</button>
+                </fieldset>
             </form>
+            
+           
 
 
             <div class="anim">
                 <div class="shape"></div>
                 <div class="paperplane">
                     <svg width="461" height="158" viewBox="0 0 462 158" xmlns="http://www.w3.org/2000/svg">
-                        <polygon fill="#338bff" class="morph" points="460.677372 157.2253946766035 112.74826634965919 38.93659227076271 119.09660989608028 145.67464085747247"></polygon>
-                        <polygon fill="#85baff" class="morph2" points="112.74826634965919 38.93659227076271 184.11226506301173 0 460.677372 157.2253946766035"></polygon>
-                        <polygon fill="#85baff" class="morph3" points="78.2439543674199 57.76104446310409 460.677372 157.2253946766035 0 100.44776067748653"></polygon>
-                    </svg>             
+                        <polygon fill="#338bff" class="morph"
+                            points="460.677372 157.2253946766035 112.74826634965919 38.93659227076271 119.09660989608028 145.67464085747247">
+                        </polygon>
+                        <polygon fill="#85baff" class="morph2"
+                            points="112.74826634965919 38.93659227076271 184.11226506301173 0 460.677372 157.2253946766035">
+                        </polygon>
+                        <polygon fill="#85baff" class="morph3"
+                            points="78.2439543674199 57.76104446310409 460.677372 157.2253946766035 0 100.44776067748653">
+                        </polygon>
+                    </svg>
                 </div>
             </div>
             <div class="shape"></div>
-                <div class="paperplane">
-                <svg width="400" height="400" viewBox="0 0 800 800"> 
+            <div class="paperplane">
+                <svg width="400" height="400" viewBox="0 0 800 800">
 
-                  <polygon fill="#85baff" class="Morph2" points="215.28	208.84
-                                                                  351.96	96.28
-                                                                  440.4	114.37
-                                                                  578.42	218.89
-                                                                  677.11	209.14
-                                                                  742.57	293.93
-                                                                  779.42	282.54
-                                                                  743.91	319.39
-                                                                  658.15	261.1"></polygon>
-                    <polygon fill="#338bff" class="Morph" points="215.28,208.84
-                                                                  438.86,118.12
-                                                                  558.7,240.06
-                                                                  677.11	209.14
-                                                                  731.18,289.48
-                                                                  775.56,281.5
-                                                                  729.78,334.42
-                                                                  659.78,266.52
-                                                                  519.64,328.96
-                                                                  414.22,245.1
+                    <polygon fill="#85baff" class="Morph2" points="215.28,208.84 351.96,96.28
+                                                                  440.4,114.37 578.42,218.89
+                                                                  677.11,209.14 742.57,293.93
+                                                                  779.42,282.54 743.91,319.39
+                                                                  658.15,261.1"></polygon>
+                    <polygon fill="#338bff" class="Morph" points="215.28,208.84 438.86,118.12
+                                                                  558.7,240.06 677.11,209.14
+                                                                  731.18,289.48 775.56,281.5
+                                                                  729.78,334.42 659.78,266.52
+                                                                  519.64,328.96 414.22,245.1
                                                                   320,351.5"></polygon>
-                  
-            
-                    <polygon fill="#85baff" class="Morph3" points="82.15	365.25
-                                                                161.88	251.35
-                                                                389.68	152.19
-                                                                548.47	260.06
-                                                                677.11	209.14
-                                                                731.38	290.88
-                                                                775.6	281.5
-                                                                735.4	309.64
-                                                                677.78	229.91
-                                                                530.38	304.28
-                                                                416.48	204.45"></polygon>
-            
-                          </svg>
-                  </div>
-                </div>
+                    <polygon fill="#85baff" class="Morph3" points="82.15,365.25 161.88,251.35
+                                                                389.68,152.19 548.47,260.06
+                                                                677.11,209.14 731.38,290.88
+                                                                775.6,281.5 735.4,309.64
+                                                                677.78,229.91 530.38,304.28
+                                                                416.48,204.45"></polygon>
+
+                </svg>
+            </div>
         </div>
-      
+        </div>
+
     </section>
-    
+
     <script src="anime.min.js"></script>
     <script src="script.js"></script>
 
-    
-        
+
+
 </body>
 
 </html>
-
