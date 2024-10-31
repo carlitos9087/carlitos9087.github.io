@@ -1,4 +1,4 @@
-// Anim Morph
+// // Anim Morph
 // var morphing1 = anime({
 //   targets: '.morph',
 //   points: [
@@ -148,80 +148,41 @@
 
 // 41.075	182.62, 80.94	125.67, 194.84	76.09, 274.23	130.03, 338.55	104.57, 365.69	145.44, 387.8	140.75, 367.7	154.82, 338.89	114.95, 265.19	152.14, 208.24	102.22, 
 //  */
-// Anim Morph
 
-var morphing = anime({
-  targets: '.morph',
-	points: [
-        //Debut
-        { value: '460.677372 125.296036 108.040017 24.8652344 112.454079 125.296036' },
-        //Fin
-        { value: '460.677372 157.296036 112.758683 38.9677241 119.111306 145.719727' },
-	],
-  easing: 'easeInOutQuad',
-  duration: 3000,
-  loop: true
-});
+// var morphing1 = anime({
+//   targets: '.morph',
+//   points: [
+//     // Pontos iniciais da primeira SVG e pontos finais da segunda SVG
+//     { value: "112.74 38.93,  182.32 62.58, 286.70 98.07,  356.29 121.73,  425.87 145.39,  460.67 157.22,  426.51 156.065, 392.35  154.91, 358.19  153.75, 289.88 151.44, 187.40 147.9, 119.09 145.67" },
+//     { value: '107.64 104.42, 219.43 59.06, 279.35 120.03, 338.55  104.57, 365.59  144.74, 387.78  140.75, 364.89	167.21, 329.89	133.26, 259.82	164.48, 207.11	122.55, 160 175.75' }
+//   ],
+//   easing: 'easeInOutQuad',
+//   duration: 3000,
+//   loop: false
+// });
 
-var morphing = anime({
-  targets: '.morph2',
-	points: [
-        //Debut
-        { value: '108.040017 24.8652344 168.780251 0 460.677372 125.296036' },
-        //Fin
-        { value: '112.758683 38.9677241 184.146186 0 460.677372 157.296036' },
-	],
-  easing: 'easeInOutQuad',
-  duration: 3000,
-  loop: true
-});
+// var morphing2 = anime({
+//   targets: '.morph2',
+//   points: [
+//     { value: "112.74 38.93, 184.11 0,   239.42 31.44,  322.39 78.61,  405.35 125.77,  433.01 141.49,  460.67 157.22, 425.87 145.39, 356.29 121.73, 286.70 98.07, 182.32 62.58" },
+//     { value: '107.64  104.42, 175.98	48.14, 220.2 57.18, 289.21	109.44, 338.55	104.57, 371.28	146.96, 389.71	141.27, 371.95	159.69, 329.07	130.55' }
+//   ],
+//   easing: 'easeInOutQuad',
+//   duration: 3000,
+//   loop: false
+// });
 
-var morphing = anime({
-  targets: '.morph3',
-	points: [
-        //Debut
-        { value: '75.3147561 38.1354167 460.677372 125.296036 0 68.5184024' },
-        //Fin
-        { value: '78.250435 57.8044647 460.677372 157.296036 0 100.518402' },
-	],
-  easing: 'easeInOutQuad',
-  duration: 3000,
-  loop: true
-});
-function interpolatePoints(p1, p2, t) {
-  return {
-      x: (1 - t) * p1.x + t * p2.x,
-      y: (1 - t) * p1.y + t * p2.y
-  };
-}
+// var morphing3 = anime({
+//   targets: '.morph3',
+//   points: [
+//     { value: "0 100.44, 78.24 57.76, 212.09 92.57, 326.81 122.4, 384.18 137.32,441.54 152.24,  204.485 148.55, 272.80 150.86, 341.11 153.17, 409.43 155.48, 443.59 156.64,  460.67 157.22" },
 
-function interpolateMultiplePoints(pointsList) {
-  const resultsDiv = document.getElementById("interpolated-points");
-  resultsDiv.innerHTML = ""; // Limpa os resultados anteriores
-
-  pointsList.forEach((pointData, index) => {
-      const { p1, p2, t } = pointData;
-      const interpolated = interpolatePoints(p1, p2, t);
-      
-      const resultElement = document.createElement("p");
-      resultElement.textContent = ` ${interpolated.x.toFixed(2)} ${interpolated.y.toFixed(2)},`;
-      resultsDiv.appendChild(resultElement);
-  });
-}
-
-// Lista de pontos para interpolação com valores de t variados
-const pointsList = [
-  { p1: { x: 112.74, y: 38.93 }, p2: { x: 460.67, y: 157.22 }, t: 0.3 },
-  { p1: { x: 112.74, y: 38.93 }, p2: { x: 460.67, y: 157.22 }, t: 0.5 },
-  { p1: { x: 112.74, y: 38.93 }, p2: { x: 460.67, y: 157.22 }, t: 0.7 },
-  { p1: { x: 112.74, y: 38.93 }, p2: { x: 460.67, y: 157.22 }, t: 0.9},
-];
-
-// Calcula e exibe os pontos interpolados com os valores de t especificados
-interpolateMultiplePoints(pointsList);
-
-
-
+//     { value: "41.075	182.62, 80.94	125.67, 194.84	76.09, 274.23	130.03, 338.55	104.57, 365.69	145.44, 387.8	140.75, 367.7	154.82, 338.89	114.95, 265.19	152.14, 208.24	102.22" }
+//   ],
+//   easing: 'easeInOutQuad',
+//   duration: 3000,
+//   loop: false
+// });
 
 
 
