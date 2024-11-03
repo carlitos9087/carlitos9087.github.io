@@ -4,7 +4,15 @@ body, h1, h2, p, ul, li, a {
     padding: 0;
 }
 
+section#home div.container{
+  background-image: url("img/linuxb.jpeg");
+  background-size: cover;
+  background-position: top center;
+  height: 100%;
+}
+
 .container {
+  
     width: 80%;
     margin: auto;
     padding: 20px;
@@ -44,10 +52,7 @@ form button {
 
 
 
-@import url(https://fonts.googleapis.com/css?family=Roboto:400,300,600,400italic);
-
-
-
+/* 
 
 #contact input[type="text"],
 #contact input[type="email"],
@@ -93,21 +98,21 @@ fieldset {
   padding: 0;
   width: 100%;
 
-}
-
+} */
+/* 
 #contact input[type="text"],
 #contact input[type="email"],
 #contact input[type="tel"],
 #contact input[type="url"],
 #contact textarea {
-  /* width: 100%; */
+  width: 100%;
   width: auto;
   border: 1px solid #ccc;
   background: #FFF;
   margin: 0 0 5px;
   padding: 10px;
-}
-
+} */
+/* 
 #contact input[type="text"]:hover,
 #contact input[type="email"]:hover,
 #contact input[type="tel"]:hover,
@@ -135,8 +140,8 @@ fieldset {
   margin: 0 0 5px;
   padding: 10px;
   font-size: 15px;
-}
-
+} */
+/* 
 #contact button[type="submit"]:hover {
   background: #43A047;
   -webkit-transition: background 0.3s ease-in-out;
@@ -173,7 +178,7 @@ fieldset {
 :-ms-input-placeholder {
   color: #888;
 }
-
+ */ 
 
 
 /* ################## */
@@ -185,19 +190,19 @@ fieldset {
 
 
 
-
+/* 
 #contact .container {
     display: flex;
     align-items: center;
     gap: 20px;
-}
+} */
 
-.anim {
+/* .anim {
     display: flex;
     justify-content: center;
     align-items: center;
     width: auto;
-    /* 450px; Ajuste a largura conforme necessário */
+   
     height: auto;
 }
 
@@ -206,17 +211,17 @@ fieldset {
     height: auto;
     margin: 50px;
 
-}
-
+} */
+/* 
 form {
     background: #fff;
     padding: 20px;
     border-radius: 10px;
     box-shadow: 0 0 20px rgba(0,0,0,0.1);
     flex: 1; 
-}
+} */
 
-fieldset {
+/* fieldset {
     border: none;
     margin-bottom: 10px;
     display: flex;
@@ -229,9 +234,9 @@ input, textarea {
     border: 1px solid #ccc;
     border-radius: 5px;
     font-size: 14px;
-}
+} */
 
-button {
+/* button {
     width: 100%;
     padding: 10px;
     background-color: #333;
@@ -246,4 +251,4 @@ button {
 button:hover {
     background-color: #555;
 }
-
+ */
