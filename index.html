@@ -6,19 +6,25 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Carlos Gomes</title>
     <link rel="stylesheet" href="style.css">
-    <link rel="icon" href="icons8-paper-plane-48.png" type="image/x-icon">
+    <link rel="icon" href="img/icons8-paper-plane-48.png" type="image/x-icon">
 </head>
 
 <body>
+    <header>
+        <a href="#main">Home</a>
+        <a href="#about">Sobre mim</a>
+        <a href="#skills">Habilidades</a>
+        <a href="#project">Projetos</a>
+        <a href="#contact">Contato</a>
+    </header>
 
-    <section id="home">
-        <div class="container">
-            <h1>Olá, eu sou Carlos Eduardo</h1>
-            <p>Estudante de Análise e Desenvolvimento de Sistemas e entusiasta de Engenharia de Dados</p>
-            <a href="#about" class="btn">Saiba Mais</a>
+    <section class="main" id="main">
+        <div class="content ">
+            <h2>Oi, eu sou o Carlos 👋<br> <span>sou programador full-stack e pesquisador em bioinformatica.</span></h2>
+            <a href="#contact" class="btn">Contato</a>
         </div>
     </section>
-
+    
     <section id="about">
         <div class="container">
             <h2>Sobre Mim</h2>
@@ -32,6 +38,18 @@
                 habilidades em um projeto de iniciação científica em bioinformática,
                 onde investigo o papel da maquinaria de acetilação proteica na resposta imune.</p>
 
+        </div>
+    </section>
+
+    <section id="skills">
+        <div class="container">
+            <h2>Habilidades Técnicas</h2>
+            <ul>
+                <li><strong>Linguagens de Programação:</strong> Python, R, JavaScript</li>
+                <li><strong>Frameworks:</strong> PySide6, Pandas, WGCNA</li>
+                <li><strong>Ferramentas de Análise de Dados:</strong> RStudio, Jupyter, Cytoscape</li>
+                <li><strong>Metodologias Ágeis:</strong> Scrum, Kanban</li>
+            </ul>
         </div>
     </section>
 
@@ -53,24 +71,10 @@
         </div>
     </section>
 
-    <section id="skills">
-        <div class="container">
-            <h2>Habilidades Técnicas</h2>
-            <ul>
-                <li><strong>Linguagens de Programação:</strong> Python, R, JavaScript</li>
-                <li><strong>Frameworks:</strong> PySide6, Pandas, WGCNA</li>
-                <li><strong>Ferramentas de Análise de Dados:</strong> RStudio, Jupyter, Cytoscape</li>
-                <li><strong>Metodologias Ágeis:</strong> Scrum, Kanban</li>
-            </ul>
-        </div>
-    </section>
 
 
     <section id="contact">
-
         <div class="container">
-
-
             <form id="contact" name="contact" method="POST" data-netlify="true">
                 <h3>Contact Form</h3>
                 <h4>Contact us for a custom quote</h4>
@@ -90,9 +94,6 @@
                     <button type="submit" id="contact-submit">Submit</button>
                 </fieldset>
             </form>
-
-
-
 
 
             <div class="anim">
@@ -115,10 +116,8 @@
 
                 </div>
             </div>
-
-
     </section>
-    <div id="interpolated-points" style="font-size: 1.5em; color: black;"></div>
+    <!-- <div id="interpolated-points" style="font-size: 1.5em; color: black;"></div> -->
 
     <script src="anime.min.js"></script>
     <script src="script.js"></script>

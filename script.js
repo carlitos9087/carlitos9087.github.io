@@ -1,6 +1,6 @@
 var morphing = anime({
   targets: '.morph',
-	points: [
+	points: [ 
 //         //Debut
 //         { value: '108.04 24.86, 460.67 125.29, 112.45 125.29' },
         //Debut
@@ -55,22 +55,22 @@ function interpolatePoints(p1, p2, t) {
   };
 }
 
-function interpolateMultiplePoints(pointsList) {
-  const resultsDiv = document.getElementById("interpolated-points");
-  resultsDiv.innerHTML = ""; // Limpa os resultados anteriores
+// function interpolateMultiplePoints(pointsList) {
+//   const resultsDiv = document.getElementById("interpolated-points");
+//   resultsDiv.innerHTML = ""; // Limpa os resultados anteriores
 
-  pointsList.forEach((pointData, index) => {
-      const { p1, p2, t } = pointData;
-      const interpolated = interpolatePoints(p1, p2, t);
+//   pointsList.forEach((pointData, index) => {
+//       const { p1, p2, t } = pointData;
+//       const interpolated = interpolatePoints(p1, p2, t);
       
-      const resultElement = document.createElement("p");
-      resultElement.textContent = ` ${interpolated.x.toFixed(2)} ${interpolated.y.toFixed(2)},`;
-      resultsDiv.appendChild(resultElement);
-  });
-}
+//       const resultElement = document.createElement("p");
+//       resultElement.textContent = ` ${interpolated.x.toFixed(2)} ${interpolated.y.toFixed(2)},`;
+//       resultsDiv.appendChild(resultElement);
+//   });
+// }
 
 // Lista de pontos para interpolação com valores de t variados
-const pointsList = [
+// const pointsList = [
   // morph 1 primeira metade
   // { p1: { x: 112.74, y: 38.93 }, p2: { x: 460.67, y: 157.22 }, t: 0.0 },
   // { p1: { x: 112.74, y: 38.93 }, p2: { x: 460.67, y: 157.22 }, t: 0.3 },
@@ -171,9 +171,9 @@ const pointsList = [
         // { p1: { x: 0, y: 100.51}, p2: { x: 460.67, y: 157.29 }, t: 0.6 },
         // { p1: { x: 0, y: 100.51}, p2: { x: 460.67, y: 157.29 }, t: 0.3 },
 
-];
+// ];
 // Calcula e exibe os pontos interpolados com os valores de t especificados
-interpolateMultiplePoints(pointsList);
+// interpolateMultiplePoints(pointsList);
 
 
 

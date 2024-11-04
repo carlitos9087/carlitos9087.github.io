@@ -1,67 +1,57 @@
+header {
+  z-index: 999;
+  position: fixed;
+  background: rgba(48, 36, 36, 0.377);
+  top: 0;
+  left: 0;
+  width: 100%;
+  padding: 14px 200px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  transition: 0.5s ease;
+}
+
+
+/* header {
+  display: block;
+  unicode-bidi: isolate;
+} */
+
 body, h1, h2, p, ul, li, a {
     font-family: Arial, sans-serif;
     margin: 0;
     padding: 0;
 }
 
-section#home div.container{
-  background-image: url("img/linuxb.jpeg");
-  background-size: cover;
-  background-position: top center;
-  height: 100%;
-}
 
-.container {
-  
+/* .container {
     width: 80%;
     margin: auto;
     padding: 20px;
     background-color: #6c6f73;
 
-}
+} */
 
-#home, #about, #projects, #skills, #contact {
+/* #main, #about, #projects, #skills, #contact {
     padding: 40px 0;
     background-color: #acffe2;
-}
+} */
 
-#home {
-    background-color: #f5f5f5;
-    text-align: center;
-}
-
-#projects .project, #skills ul {
-    margin-top: 20px;
-}
-
-form input, form textarea {
-    width: 100%;
-    margin-top: 10px;
-    padding: 10px;
-    border: 1px solid #ccc;
-}
-
-form button {
-    padding: 10px 20px;
-    background-color: #007bff;
-    color: white;
-    border: none;
-    cursor: pointer;
+#main {
+  background-image: url("img/linuxb.jpeg");
+  position: relative;
+  width: 100%;
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed;
+    
 }
 
 
-
-
-/* 
-
-#contact input[type="text"],
-#contact input[type="email"],
-#contact input[type="tel"],
-#contact input[type="url"],
-#contact textarea,
-#contact button[type="submit"] {
-  font: 400 12px/16px "Roboto", Helvetica, Arial, sans-serif;
-}
 
 #contact {
 
@@ -98,8 +88,8 @@ fieldset {
   padding: 0;
   width: 100%;
 
-} */
-/* 
+}
+
 #contact input[type="text"],
 #contact input[type="email"],
 #contact input[type="tel"],
@@ -111,8 +101,8 @@ fieldset {
   background: #FFF;
   margin: 0 0 5px;
   padding: 10px;
-} */
-/* 
+}
+
 #contact input[type="text"]:hover,
 #contact input[type="email"]:hover,
 #contact input[type="tel"]:hover,
@@ -140,64 +130,21 @@ fieldset {
   margin: 0 0 5px;
   padding: 10px;
   font-size: 15px;
-} */
-/* 
-#contact button[type="submit"]:hover {
-  background: #43A047;
-  -webkit-transition: background 0.3s ease-in-out;
-  -moz-transition: background 0.3s ease-in-out;
-  transition: background-color 0.3s ease-in-out;
 }
 
-#contact button[type="submit"]:active {
-  box-shadow: inset 0 1px 3px rgba(0, 0, 0, 0.5);
-}
-
-.copyright {
-  text-align: center;
-}
-
-#contact input:focus,
-#contact textarea:focus {
-  outline: 0;
-  border: 1px solid #aaa;
-}
-
-::-webkit-input-placeholder {
-  color: #888;
-}
-
-:-moz-placeholder {
-  color: #888;
-}
-
-::-moz-placeholder {
-  color: #888;
-}
-
-:-ms-input-placeholder {
-  color: #888;
-}
- */ 
-
-
-/* ################## */
-
-
-/* section {
-    padding: 40px 0;
-} */
 
 
 
-/* 
+
 #contact .container {
     display: flex;
     align-items: center;
     gap: 20px;
-} */
+}
 
-/* .anim {
+
+
+.anim {
     display: flex;
     justify-content: center;
     align-items: center;
@@ -211,17 +158,17 @@ fieldset {
     height: auto;
     margin: 50px;
 
-} */
-/* 
+}
+
 form {
     background: #fff;
     padding: 20px;
     border-radius: 10px;
     box-shadow: 0 0 20px rgba(0,0,0,0.1);
     flex: 1; 
-} */
+}
 
-/* fieldset {
+fieldset {
     border: none;
     margin-bottom: 10px;
     display: flex;
@@ -234,9 +181,9 @@ input, textarea {
     border: 1px solid #ccc;
     border-radius: 5px;
     font-size: 14px;
-} */
+}
 
-/* button {
+button {
     width: 100%;
     padding: 10px;
     background-color: #333;
@@ -251,4 +198,4 @@ input, textarea {
 button:hover {
     background-color: #555;
 }
- */
+
