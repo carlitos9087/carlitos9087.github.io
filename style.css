@@ -12,11 +12,46 @@ header {
   transition: 0.5s ease;
 }
 
+header a{
+  color: white;
+  text-transform: none;
+  text-decoration: none;
+}
 
-/* header {
-  display: block;
-  unicode-bidi: isolate;
-} */
+.content {
+  display: flex;
+  width: 300;
+  color:white;
+  flex-direction: column;
+  margin-left: 10%;
+  line-height: 30px;
+  text-justify: justify;
+  margin-bottom: 10%;
+
+}
+.content h2 {
+  color:white;
+  font-size: 35px;
+
+}
+.content span {
+color: white;
+font-size: 18px;
+}
+
+.content .btn{
+  margin: 5px;
+  margin-top: 15px;
+  background-color: rgb(72, 101, 188);
+  border-radius: 15px;
+  width: 100px;
+  text-align: center;
+  text-transform: none;
+  text-decoration: none;
+  color: white;
+  font-size: 8px;
+}
+
 
 body, h1, h2, p, ul, li, a {
     font-family: Arial, sans-serif;
@@ -24,19 +59,6 @@ body, h1, h2, p, ul, li, a {
     padding: 0;
 }
 
-
-/* .container {
-    width: 80%;
-    margin: auto;
-    padding: 20px;
-    background-color: #6c6f73;
-
-} */
-
-/* #main, #about, #projects, #skills, #contact {
-    padding: 40px 0;
-    background-color: #acffe2;
-} */
 
 #main {
   background-image: url("img/linuxb.jpeg");
@@ -50,6 +72,71 @@ body, h1, h2, p, ul, li, a {
   background-attachment: fixed;
     
 }
+
+
+section#about {
+  background: linear-gradient(#090810, #272243, #292545,#130E35); /* Gradiente roxo */
+  padding: 50px 0; /* Espaçamento superior e inferior */
+      text-align: center;
+}
+
+section#about .container {
+  display: flex;
+  align-items: center; /* Centraliza verticalmente a imagem e o texto */
+  gap: 20px; /* Espaçamento entre a imagem e o texto */
+  max-width: 1200px;
+  margin: 50px auto; /* Centraliza o contêiner na página */
+  justify-content: center
+}
+
+section#about img {
+  max-width: 300px; /* Ajuste conforme necessário */
+  height: auto;
+  border-radius: 50%; /* Opcional: bordas arredondadas */
+}
+
+section#about .text-content {
+  color: #ffffff; /* Cor do texto */
+}
+
+section#about h2 {
+  margin-bottom: 10px; /* Espaçamento entre o título e o parágrafo */
+  color: #ffffff;
+  text-align: center;
+}
+
+section#about p {
+  font-size: 16px;
+  max-width: 650px;
+  color: #ffffff;
+  /* text-indent: 20px; */
+  text-align: justify;
+  padding: 10px 10%;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
