@@ -123,6 +123,91 @@ section#about p {
 
 
 
+.container {
+  display: flex;
+  gap: 20px;
+justify-content: center;
+flex-wrap: wrap
+}
+
+section#projects [title="project"]{
+text-align: center;
+color: #4CAF50;
+margin: 40px 0px;
+
+}
+.project {
+  background-color: #282828;
+  padding: 20px;
+  border-radius: 10px;
+  transition: transform 0.3s ease;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  position: relative;
+  overflow: hidden;
+  width: 220px;
+}
+
+.project:hover {
+  transform: scale(1.1);
+}
+
+.project img {
+  width: 100%;
+  height: 200px;
+  object-fit: cover;
+  border-radius: 10px;
+}
+
+.project h2 {
+  margin-top: 10px;
+  margin-bottom: 5px;
+  color: white;
+}
+
+.project p {
+  font-size: 14px;
+  line-height: 1.5;
+  color: white;
+}
+
+.buttons {
+  display: flex;
+  justify-content: center;
+  gap: 10px;
+  margin-top: 15px;
+}
+
+.button {
+  background-color: #4250f5;
+  color: white;
+  padding: 10px 20px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 14px;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.button:hover {
+  opacity: 0.8;
+}
+
+.skills {
+  display: flex;
+  justify-content: center;
+  gap: 10px;
+  margin-top: 10 px;
+}
+
+.skill {
+  background-color: #555;
+  color: white;
+  padding: 5px 10px;
+  border-radius: 5px;
+  margin-top: 5px;
+  font-size: 14px;
+}
 
 
 
@@ -140,6 +225,7 @@ section#about p {
 
 
 
+/*        fdsfdsf                          */
 #contact {
 
     font-family: "Roboto", Helvetica, Arial, sans-serif;

@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html>
+<head>
+<style>
+body {
+  background-color: #181818;
+  color: #fff;
+  font-family: sans-serif;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  margin: 0;
+}
+
+.container {
+  display: flex;
+  gap: 20px;
+}
+
+.project {
+  background-color: #282828;
+  padding: 20px;
+  border-radius: 10px;
+  transition: transform 0.3s ease;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  position: relative;
+  overflow: hidden;
+}
+
+.project:hover {
+  transform: scale(1.1);
+}
+
+.project img {
+  width: 100%;
+  height: 200px;
+  object-fit: cover;
+  border-radius: 10px;
+}
+
+.project h2 {
+  margin-top: 10px;
+  margin-bottom: 5px;
+}
+
+.project p {
+  font-size: 14px;
+  line-height: 1.5;
+}
+
+.buttons {
+  display: flex;
+  justify-content: center;
+  gap: 10px;
+  margin-top: 15px;
+}
+
+.button {
+  background-color: #4CAF50;
+  color: white;
+  padding: 10px 20px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 14px;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.button:hover {
+  opacity: 0.8;
+}
+
+.skills {
+  display: flex;
+  justify-content: center;
+  gap: 10px;
+  margin-top: 10 px;
+}
+
+.skill {
+  background-color: #555;
+  color: white;
+  padding: 5px 10px;
+  border-radius: 5px;
+  margin-top: 5px;
+  font-size: 14px;
+}
+</style>
+</head>
+<body>
+
+<div class="container">
+  <div class="project">
+    <img src="img/lancamento-em-breve-3467049595.jpg" alt="Project 1">
+    <h2>Project 1</h2>
+    <p>Description of Project 1.</p>
+    <div class="buttons">
+      <a href="#" class="button">Demo</a>
+      <a href="#" class="button">Source</a>
+    </div>
+    <div class="skills">
+      <div class="skill">HTML</div>
+      <div class="skill">CSS</div>
+    </div>
+  </div>
+
+  <div class="project">
+    <img src="img/lancamento-em-breve-3467049595.jpg" alt="Project 2">
+    <h2>Project 2</h2>
+    <p>Description of Project 2.</p>
+    <div class="buttons">
+      <a href="#" class="button">Demo</a>
+      <a href="#" class="button">Source</a>
+    </div>
+    <div class="skills">
+      <div class="skill">JavaScript</div>
+      <div class="skill">React</div>
+    </div>
+  </div>
+
+  <div class="project">
+    <img src="img/lancamento-em-breve-3467049595.jpg" alt="Project 3">
+    <h2>Project 3</h2>
+    <p>Description of Project 3.</p>
+    <div class="buttons">
+      <a href="#" class="button">Demo</a>
+      <a href="#" class="button">Source</a>
+    </div>
+    <div class="skills">
+      <div class="skill">Node.js</div>
+      <div class="skill">Express</div>
+    </div>
+  </div>
+</div>
+<a href="teste.html">teste</a>
+</body> 
+</html>
