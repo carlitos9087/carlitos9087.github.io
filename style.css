@@ -162,12 +162,14 @@ margin: 40px 0px;
   margin-top: 10px;
   margin-bottom: 5px;
   color: white;
+  text-align: center;
 }
 
 .project p {
   font-size: 14px;
   line-height: 1.5;
   color: white;
+  text-align: justify;
 }
 
 .buttons {
