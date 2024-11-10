@@ -116,8 +116,14 @@ section#about p {
 
 
 
+#skills{
+display: flex;
+flex-direction: column;
+}
 
-
+#softskill{
+  width: 300px;
+}
 
 
 
@@ -132,7 +138,7 @@ flex-wrap: wrap
 
 section#projects [title="project"]{
 text-align: center;
-color: #4CAF50;
+color: #000000;
 margin: 40px 0px;
 
 }
@@ -170,6 +176,7 @@ margin: 40px 0px;
   line-height: 1.5;
   color: white;
   text-align: justify;
+  
 }
 
 .buttons {
@@ -211,7 +218,28 @@ margin: 40px 0px;
   font-size: 14px;
 }
 
+.skill-container {
+  margin: 10px 0;
+}
 
+.skill-title {
+  font-size: 1.2em;
+  margin-bottom: 5px;
+}
+
+.progress-bar {
+  width: 100%;
+  background-color: #e0e0e0;
+  border-radius: 20px;
+  overflow: hidden;
+}
+
+.progress {
+  height: 20px;
+  width: 80%; /* Ajuste o valor de acordo com o progresso desejado */
+  background-color: #4caf50;
+  border-radius: 20px 0 0 20px;
+}
 
 
 
