@@ -64,7 +64,8 @@ body, h1, h2, p, ul, li, a {
 
 
 #main {
-  background-image: url("img/linuxb.jpeg");
+  /* background-image: url("img/linuxb.jpeg"); */
+  background-image: url("img/pinguins3.gif");
   position: relative;
   width: 100%;
   min-height: 100vh;
@@ -122,6 +123,7 @@ section#about p {
 #skills{
 display: flex;
 flex-direction: column;
+/* flex-wrap: wrap; */
 }
 
 #softskill{
@@ -211,6 +213,7 @@ margin: 40px 0px;
   justify-content: center;
   gap: 10px;
   margin-top: 10 px;
+  flex-wrap: wrap;
 }
 
 .skill {
