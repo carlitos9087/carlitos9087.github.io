@@ -48,43 +48,66 @@
   <section id="skills">
     <h2>Habilidades</h2>
     <div class="container">
-      <div id="hardskill">hardskill</div>
+
+      <div id="hardskill">
+        <h3 style="text-align: center;">Hard skills</h3>
+        <div id="grid">
+          <div class="grid-item"><img src="img/Javascript.png" alt="Skill 1"></div>
+          <div class="grid-item"><img src="img/css.png" alt="Skill 2"></div>
+          <div class="grid-item"><img src="img/html.png" alt="Skill 3"></div>
+          <div class="grid-item"><img src="img/git.png" alt="Skill 4"></div>
+          <div class="grid-item"><img src="img/github.png" alt="Skill 5"></div>
+          <div class="grid-item"><img src="img/pyhon.png" alt="Skill 6"></div>
+          <div class="grid-item"><img src="img/linux.png" alt="Skill 7"></div>
+          <div class="grid-item"><img src="img/java.png" alt="Skill 8"></div>
+          <div class="grid-item"><img src="img/docker.png" alt="Skill 9"></div>
+          <div class="grid-item"><img src="img/postgres.png" alt="Skill 10"></div>
+          <div class="grid-item"><img src="img/powerbi.png" alt="Skill 11"></div>
+          <div class="grid-item"><img src="img/R.png" alt="Skill 12"></div>
+          <div class="grid-item"><img src="img/excel.png" alt="Skill 13"></div>
+          <div class="grid-item"><img src="img/cytoscape.png" alt="Skill 14"></div>
+          <div class="grid-item"><img src="img/mysql.png" alt="Skill 15"></div>
+        </div>
+      </div>
 
 
       <div id="softskill">
-        <h3 style="text-align: center;">softskill</h3>
+        <h3 style="text-align: center;">Soft skills</h3>
 
-        <div class="skill-container">
-          <div class="skill-title">Organização</div>
+        <div class="skill-title">Criatividade</div>
+        <div class="progress-bar">
+          <div class="progress"></div>
+        </div>
+
+        <!-- <div class="skill-container"> -->
+          <div class="skill-title">Trabalho em equipe</div>
           <div class="progress-bar">
-            <div class="progress"></div>
+            <div class="progress2"></div>
           </div>
 
-          <div class="skill-title">Organização</div>
+          <div class="skill-title">Comunicação eficaz</div>
           <div class="progress-bar">
-            <div class="progress"></div>
+            <div class="progress3"></div>
           </div>
+        <!-- </div> -->
+        <div class="skill-title">Adaptabilidade</div>
+        <div class="progress-bar">
+          <div class="progress4"></div>
         </div>
+
+        <div class="skill-title">Proatividade</div>
+        <div class="progress-bar">
+          <div class="progress5"></div>
+        </div>
+
+
+
         <div class="skill-title">Organização</div>
         <div class="progress-bar">
-          <div class="progress"></div>
+          <div class="progress6"></div>
         </div>
-
-        <div class="skill-title">Organização</div>
-        <div class="progress-bar">
-          <div class="progress"></div>
-        </div>
-
-        <div class="skill-title">Organização</div>
-        <div class="progress-bar">
-          <div class="progress"></div>
-        </div>
-
-
-
 
       </div>
-
     </div>
   </section>
 
@@ -126,13 +149,12 @@
           <img src="projetos/dslist/capa.png" alt="Project 3">
         </a>
         <h2>DSList</h2>
-        <p>DSList gerencia uma lista de games, 
+        <p>DSList gerencia uma lista de games,
           usando remotamente um banco SQL e permitindo a categorização por
-           gênero e alteração da ordem dos jogos por meio de transações.</p>
+          gênero e alteração da ordem dos jogos por meio de transações.</p>
         <div class="buttons">
           <a disabled style="background-color: grey; " target="_blank" class="button">View</a>
-          <a href="https://github.com/carlitos9087/dslist"
-            class="button" target="_blank">Code</a>
+          <a href="https://github.com/carlitos9087/dslist" class="button" target="_blank">Code</a>
         </div>
         <div class="skills">
           <div class="skill">Java</div>
@@ -154,8 +176,7 @@
         <p>Portifólio com meus pricipais projetos de programador e pesquisador em bioinformatica</p>
         <div class="buttons">
           <a href="#main" target="_blank" class="button">View</a>
-          <a href="https://github.com/carlitos9087/carlitos9087.github.io"
-            class="button" target="_blank">Code</a>
+          <a href="https://github.com/carlitos9087/carlitos9087.github.io" class="button" target="_blank">Code</a>
         </div>
         <div class="skills">
           <div class="skill">HTML</div>
@@ -213,8 +234,8 @@
         <p>Criando teclado realista e divertido</p>
         <div class="buttons">
           <a href="/projetos/teclado/index.html" target="_blank" class="button">View</a>
-          <a href="https://github.com/carlitos9087/carlitos9087.github.io/tree/main/projetos/teclado"
-            class="button" target="_blank">Code</a>
+          <a href="https://github.com/carlitos9087/carlitos9087.github.io/tree/main/projetos/teclado" class="button"
+            target="_blank">Code</a>
         </div>
         <div class="skills">
           <div class="skill">HTML</div>
@@ -223,7 +244,7 @@
         </div>
       </div>
 
-<!-- 
+      <!-- 
       <div class="project">
         <a href="/projetos/js-yugioh-assets/index.html" target="_blank">
           <img src="/projetos/js-yugioh-assets/src/assets/capa.png" alt="Project 3">
@@ -381,8 +402,6 @@
   </section>
 
 
-
-
   <section id="contact">
     <div class="container">
       <form id="contact" name="contact" method="POST" data-netlify="true">
@@ -427,13 +446,13 @@
         </div>
       </div>
   </section>
-  <!-- <div id="interpolated-points" style="font-size: 1.5em; color: black;"></div> -->
 
   <script src="anime.min.js"></script>
   <script src="script.js"></script>
+  <!-- <div id="interpolated-points" style="font-size: 1.5em; color: black;"></div>  -->
 
-
-
+  edfsadfdfadsfsa
+  gfdsfdasfaadfsa
 </body>
 
 </html>

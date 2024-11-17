@@ -47,12 +47,13 @@ font-size: 20px;
   margin-top: 15px;
   background-color: rgb(72, 101, 188);
   border-radius: 15px;
-  width: 100px;
+  width: 120px;
+  padding: 1%;
   text-align: center;
   text-transform: none;
   text-decoration: none;
   color: white;
-  font-size: 15px;
+  font-size: 18px;
 }
 
 
@@ -60,6 +61,7 @@ body, h1, h2, p, ul, li, a {
     font-family: Arial, sans-serif;
     margin: 0;
     padding: 0;
+    width: 100%;
 }
 
 
@@ -123,17 +125,87 @@ section#about p {
 #skills{
 display: flex;
 flex-direction: column;
+background: linear-gradient(#130E35, #272243, #292545,#130E35); /* Gradiente roxo */
+
 /* flex-wrap: wrap; */
 }
 
 #softskill{
-  width: 300px;
+  min-width: 30%;
+  max-width: 30%;
+  display: flex;
+  color: white;
+  padding: 50px;
+  flex-direction: column;
+  align-content: stretch;
+  justify-content: center;
+  align-items: flex-start;
+
+}
+
+#hardskill h2{
+  /* width: 300px; */
+  text-align: center;
+  color: white;
 }
 
 
+#hardskill{
+  min-width: 400px;
+  max-width: 40%;
+  text-align: center;
+  color: white;
+  padding: 50px 50px;
+}
 
+#hardskill #grid {
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+  grid-template-rows: repeat(3, 1fr);
+  gap: 30px;
+  padding: 20px;
+  background-color: rgba(255, 255, 255, 0.286);
+  
+}
+/* #hardskill {
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+  grid-template-rows: repeat(3, 1fr);
+  gap: 10px;
+  padding: 20px;
+  background-color: rgba(255, 255, 255, 0.8);
+} */
+.grid-item {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #ffffff64;
+  border: 1px solid #000000;
+  border-radius: 5px;
+  overflow: hidden;
+}
+.grid-item img {
+  width: 100%;
+  height: auto;
+  object-fit: cover;
+}
+@media (max-width: 920px) {
+  #hardskill #grid {
+      grid-template-columns: repeat(3, 1fr);
+  }
 
-
+  #softskill{
+    min-width: 50%;
+    display: flex;
+    color: white;
+    padding: 50px;
+    flex-direction: column;
+    align-content: stretch;
+    justify-content: center;
+    align-items: flex-start;
+  
+  }
+}
 .container {
   display: flex;
   gap: 20px;
@@ -208,6 +280,15 @@ margin: 40px 0px;
   opacity: 0.8;
 }
 
+
+
+section#skills h2{
+text-align: center;
+color: white;
+}
+
+
+
 .skills {
   display: flex;
   justify-content: center;
@@ -230,8 +311,9 @@ margin: 40px 0px;
 }
 
 .skill-title {
-  font-size: 1.2em;
+  font-size: 1.0em;
   margin-bottom: 5px;
+  padding-top: 10px;
 }
 
 .progress-bar {
@@ -243,8 +325,40 @@ margin: 40px 0px;
 
 .progress {
   height: 20px;
+  width: 85%; /* Ajuste o valor de acordo com o progresso desejado */
+  background-color: #0277BD;
+  border-radius: 20px 0 0 20px;
+}
+
+.progress2 {
+  height: 20px;
+  width: 75%; /* Ajuste o valor de acordo com o progresso desejado */
+  background-color: #0277BD;
+  border-radius: 20px 0 0 20px;
+}
+.progress3 {
+  height: 20px;
+  width: 95%; /* Ajuste o valor de acordo com o progresso desejado */
+  background-color: #0277BD;
+  border-radius: 20px 0 0 20px;
+}
+.progress4 {
+  height: 20px;
+  width: 65%; /* Ajuste o valor de acordo com o progresso desejado */
+  background-color: #0277BD;
+  border-radius: 20px 0 0 20px;
+}
+.progress5 {
+  height: 20px;
   width: 80%; /* Ajuste o valor de acordo com o progresso desejado */
-  background-color: #4caf50;
+  background-color: #0277BD;
+  border-radius: 20px 0 0 20px;
+}
+
+.progress6 {
+  height: 20px;
+  width: 70%; /* Ajuste o valor de acordo com o progresso desejado */
+  background-color: #0277BD;
   border-radius: 20px 0 0 20px;
 }
 
@@ -260,9 +374,8 @@ margin: 40px 0px;
 
 
 
-
-
 /*        fdsfdsf                          */
+
 #contact {
 
     font-family: "Roboto", Helvetica, Arial, sans-serif;
@@ -376,7 +489,7 @@ form {
     padding: 20px;
     border-radius: 10px;
     box-shadow: 0 0 20px rgba(0,0,0,0.1);
-    /* flex: 1;  */
+
     max-width: 50%;
     min-width: 30%;
 }
