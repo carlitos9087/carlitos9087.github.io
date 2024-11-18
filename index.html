@@ -11,11 +11,14 @@
 
 <body>
   <header>
-    <a href="#main">Home</a>
-    <a href="#about">Sobre mim</a>
-    <a href="#skills">Habilidades</a>
-    <a href="#projects">Projetos</a>
-    <a href="#contact">Contato</a>
+    <div class="menu-icon" id="menu-icon">&#9776;</div>
+    <nav id="nav-menu">
+      <a href="#main">Home</a>
+      <a href="#about">Sobre mim</a>
+      <a href="#skills">Habilidades</a>
+      <a href="#projects">Projetos</a>
+      <a href="#contact">Contato</a>
+    </nav>
   </header>
 
   <section class="main" id="main">
@@ -73,13 +76,13 @@
 
       <div id="softskill">
         <h3 style="text-align: center;">Soft skills</h3>
+        <div id="fundo">
+          <div class="skill-title">Criatividade</div>
+          <div class="progress-bar">
+            <div class="progress"></div>
+          </div>
 
-        <div class="skill-title">Criatividade</div>
-        <div class="progress-bar">
-          <div class="progress"></div>
-        </div>
-
-        <!-- <div class="skill-container"> -->
+          <!-- <div class="skill-container"> -->
           <div class="skill-title">Trabalho em equipe</div>
           <div class="progress-bar">
             <div class="progress2"></div>
@@ -89,26 +92,27 @@
           <div class="progress-bar">
             <div class="progress3"></div>
           </div>
-        <!-- </div> -->
-        <div class="skill-title">Adaptabilidade</div>
-        <div class="progress-bar">
-          <div class="progress4"></div>
+          <!-- </div> -->
+          <div class="skill-title">Adaptabilidade</div>
+          <div class="progress-bar">
+            <div class="progress4"></div>
+          </div>
+
+          <div class="skill-title">Proatividade</div>
+          <div class="progress-bar">
+            <div class="progress5"></div>
+          </div>
+
+
+
+          <div class="skill-title">Organização</div>
+          <div class="progress-bar">
+            <div class="progress6"></div>
+          </div>
+
+          </divI>
         </div>
-
-        <div class="skill-title">Proatividade</div>
-        <div class="progress-bar">
-          <div class="progress5"></div>
-        </div>
-
-
-
-        <div class="skill-title">Organização</div>
-        <div class="progress-bar">
-          <div class="progress6"></div>
-        </div>
-
       </div>
-    </div>
   </section>
 
   <section id="projects">
@@ -408,7 +412,7 @@
         <h3>Contact Form</h3>
         <h4>Contact us for a custom quote</h4>
         <fieldset>
-          <input name="name" placeholder="Your name" type="text" tabindex="1" required autofocus>
+          <input name="name" placeholder="Your name" type="text" tabindex="1" required >
         </fieldset>
         <fieldset>
           <input name="email" placeholder="Your Email Address" type="email" tabindex="2" required>
@@ -417,7 +421,7 @@
           <input name="phone" placeholder="Your Phone Number (optional)" type="tel" tabindex="3">
         </fieldset>
         <fieldset>
-          <textarea name="message" placeholder="Type your message here...." tabindex="5" required></textarea>
+          <textarea name="message" placeholder="Type your message here...." tabindex="4" required></textarea>
         </fieldset>
         <fieldset>
           <button type="submit" id="contact-submit">Submit</button>
@@ -451,8 +455,6 @@
   <script src="script.js"></script>
   <!-- <div id="interpolated-points" style="font-size: 1.5em; color: black;"></div>  -->
 
-  edfsadfdfadsfsa
-  gfdsfdasfaadfsa
 </body>
 
 </html>
