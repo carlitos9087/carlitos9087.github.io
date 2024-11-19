@@ -250,6 +250,7 @@ section#about p {
 }
 
 #hardskill #grid {
+  border-radius: 10px;
   display: grid;
   grid-template-columns: repeat(5, 1fr);
   grid-template-rows: repeat(3, 1fr);
@@ -301,6 +302,86 @@ section#about p {
 }
 
 }
+.formacao{
+  color: white;
+  min-width: 40%;
+}
+#label-formacao p{
+padding: 10px 0px;
+}
+#label-formacao{
+  width: 100%;
+  display: flex;
+  color: white;
+  margin: 10px;
+  border-radius: 5px;
+  background: rgb(36, 16, 79);
+  background: linear-gradient(90deg, rgba(51,27,101,0.7076371564250701) 34%, rgba(255, 254, 254, 0) 96%);
+}
+#label-formacao img{
+  max-width: 70px;
+  max-height: 70px;
+  border-radius: 5px;
+  margin-right: 10px;
+  
+}
+.logo{
+  display: flex;
+  padding: 3%;
+  align-items: center
+
+}
+
+.formacao h3 {
+  text-align: center;
+  padding: 10px;
+}
+.formacao h4{
+padding-top: 10px;
+}
+.blackhole{
+  display: flex;
+  justify-content: center;
+
+}
+.blackhole svg{
+
+  min-width: 300px;
+
+}
+
+
+
+
+
+
+@media screen and (max-width: 1000px) {
+.formacao{
+  min-width: 40%;
+  width: 90%;
+}
+#label-formacao{
+  width: 100%;
+
+  
+}
+#label-formacao img{
+  max-width: 50px;
+  max-height: 50px;
+  border-radius: 5px;
+  margin-right: 10px;
+  
+}
+}
+
+
+
+
+
+
+
+
+
 
 .container {
   display: flex;
@@ -653,3 +734,7 @@ button {
 button:hover {
   background-color: #555;
 }
+
+
+
+
