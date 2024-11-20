@@ -64,7 +64,7 @@ nav {
   nav {
     display: none;
     flex-direction: column;
-    background: rgba(48, 36, 36, 0.9);
+    background: #000000ad;
     position: absolute;
     top: 50px;
     left: 0;
@@ -82,6 +82,7 @@ nav {
   nav a {
     margin: 10px 0;
     text-align: center;
+    width: 90%;
 
   }
 
@@ -142,7 +143,7 @@ a {
 
   background-image: url("img/pinguins3.gif");
   position: relative;
-  width: 100VW;
+  width: 100%;
   min-height: 100vh;
   display: flex;
   align-items: center;
@@ -165,8 +166,8 @@ section#about .container {
   display: flex;
   align-items: center;
   gap: 20px;
-  max-width: 1200px;
-  margin: 50px auto;
+  width: 100%;
+  margin: 50px 0;
   justify-content: space-around;
 }
 
@@ -574,7 +575,7 @@ section#skills h3 {
   font-size: 12px;
   line-height: 30px;
   color: #777;
-  /*padding: 25px;*/
+  padding: 25px;
   box-shadow: 0 0 20px 0 rgba(0, 0, 0, 0.2), 0 5px 5px 0 rgba(0, 0, 0, 0.24);
 }
 
@@ -735,6 +736,89 @@ button:hover {
   background-color: #555;
 }
 
+.icons {
+  display: flex;
+  justify-content: flex-start;
+  width: 50%;
+  height: 60px;
+  padding-top: 20px;
+}
+.icons img{
+  width: 80%;
+  
+}
+section#rodape{
+  background: linear-gradient(#000000, #000000);
+}
+.container-h{
+  color: white;
+  display: flex;
+  gap: 40px;
+  justify-content: center;
+  flex-wrap: nowrap;
+  flex-direction: row;
+
+}
+.container-h h2{
+text-align: center;
+font-size: xx-large;
+}
+.container-h p{
+  text-align: center;
+  }
+.icones{
+display: flex;
+flex-direction: column;
+
+}
 
 
+.icones a {
+  display: flex; 
+  align-items: center; 
+  gap: 10px; 
+  /* text-decoration: none; */
+  color: inherit;
+  padding: 5px;
+  width: 80%;
+}
 
+.icones img {
+  width: 24px; /* Mantém o tamanho do ícone */
+  height: auto; /* Ajusta proporcionalmente a altura */
+}
+
+#contato-footer{
+  display: flex;
+  flex-direction: column;
+  align-content: center;
+  align-items: stretch;
+  justify-content: space-around;
+}
+@media screen and (max-width: 768px) {
+  .icones a {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    /* text-decoration: none; */
+    color: inherit;
+    padding: 5px;
+    width: 80%;
+}
+
+.container-h p {
+    text-align: center;
+    font-size: medium;
+}
+
+.container-h {
+    color: white;
+    display: flex;
+    gap: 40px;
+    justify-content: center;
+    flex-wrap: wrap;
+    flex-direction: column;
+    align-content: center;
+    align-items: center;
+}
+}
