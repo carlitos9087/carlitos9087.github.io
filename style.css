@@ -1,11 +1,8 @@
-
-
 * {
   box-sizing: border-box;
   margin: 0;
   padding: 0;
 }
-
 
 header {
   position: fixed;
@@ -23,7 +20,7 @@ header {
 }
 
 body{
-  width: 100VW;
+  width: 100%;
   min-height: 100vh;
   margin: 0;
   padding: 0;
@@ -40,7 +37,7 @@ header a {
   display: none;
   cursor: pointer;
   font-size: 24px;
-  color: white;
+  color: rgb(255, 255, 255);
   
 }
 
@@ -125,8 +122,14 @@ nav {
   text-decoration: none;
   color: white;
   font-size: 18px;
+  transition: transform 0.3s ease;
 }
 
+
+
+.btn:hover{
+  transform: scale(1.1);
+}
 
 body,
 h1,
@@ -154,11 +157,10 @@ a {
 }
 
 
-
-
 section {
   background: linear-gradient(#130E35, #272243, #292545, #130E35);
   padding: 50px 0;
+  /* width: 100%; */
 
 }
 
@@ -173,11 +175,11 @@ section#about .container {
 
 section#about img {
   max-width: 300px;
-
   height: auto;
   border-radius: 50%;
 
 }
+
 
 section#about .text-content {
   color: #ffffff;
@@ -195,6 +197,8 @@ section#about p {
   font-size: 16px;
   max-width: 650px;
   color: #ffffff;
+  text-indent: 2em; 
+  line-height: 1.5; 
 
   text-align: justify;
   padding: 10px 10%;
@@ -270,7 +274,13 @@ section#about p {
   border: 1px solid #000000;
   border-radius: 5px;
   overflow: hidden;
+  transition: transform 0.3s ease;
 }
+
+.grid-item:hover {
+  transform: scale(1.1);
+}
+
 
 .grid-item img {
   width: 100%;
@@ -295,12 +305,6 @@ section#about p {
     align-items: flex-start;
 
   }
-  .content h2 {
-    color: white;
-    font-size: 40px;
-    line-height: normal;
-    margin-bottom: 10px;
-}
 
 }
 .formacao{
@@ -388,7 +392,7 @@ padding-top: 10px;
   display: flex;
   gap: 40px;
   justify-content: center;
-  flex-wrap: wrap
+  flex-wrap: wrap;
 }
 
 section#projects [title="project"] {
@@ -433,6 +437,13 @@ section#projects [title="project"] {
   color: white;
   text-align: justify;
 
+}
+
+section#projects .container{
+  background-color: rgba(255, 255, 255, 0.134);
+  margin: 3%;
+  padding: 3%;
+  border-radius: 20px;
 }
 
 .buttons {
@@ -691,8 +702,19 @@ svg {
   .paperplane {
       width: 80%;
   }
+  .content h2 {
+    color: white;
+    font-size: large;
+    line-height: normal;
+    margin-bottom: 10px;
+}
+.content span{
+font-size: small;
+}
 
 }
+
+
 
 form {
   background: #ffffff;
@@ -742,11 +764,18 @@ button:hover {
   width: 50%;
   height: 60px;
   padding-top: 20px;
-}
-.icons img{
-  width: 80%;
   
 }
+.icons img{
+  width: 80%;  
+  transition: transform 0.3s ease;
+}
+
+
+.icons img:hover{
+  transform: scale(1.1);
+}
+
 section#rodape{
   background: linear-gradient(#000000, #000000);
 }
@@ -822,3 +851,23 @@ flex-direction: column;
     align-items: center;
 }
 }
+
+
+.recaptcha {
+  text-align: center; 
+  width: 100%; 
+}
+
+.recaptcha > div {
+  display: inline-block; 
+  max-width: 100%; 
+  transform: scale(0.85); 
+  transform-origin: 0 0; 
+}
+
+@media screen and (max-width: 480px) {
+  .recaptcha > div {
+    transform: scale(0.75); 
+  }
+}
+

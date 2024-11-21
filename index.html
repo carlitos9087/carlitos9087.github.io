@@ -24,7 +24,7 @@
 
   <section class="main" id="main">
     <div class="content">
-      <h2>Oi, eu sou o Carlos 👋<br> <br><span>sou programador full-stack <br>e pesquisador em bioinformatica.</span>
+      <h2>Oi, eu sou o Carlos 👋<br> <br><span>Sou programador full-stack <br>e pesquisador em bioinformatica.</span>
       </h2>
       <a href="#contact" class="btn">Contato</a>
       <div class="icons">
@@ -156,7 +156,7 @@
         <div id="label-formacao">
           <div class="logo"><img src="img/etectm-profile_image-eb3289a7dc71e6e8-70x70.jpeg" alt=""></div>
           <div>
-            <h4>Técnico em Automação Industrial integrado</h4>
+            <h4>Técnico em Automação Industrial</h4>
             <p>ETEC Takashi Morita <br>
               2019-2021</p>
           </div>
@@ -432,37 +432,16 @@
     </div>
   </section>
 
-
   <section id="contact">
     <div class="container">
-      <!-- <form id="contact" name="contact" method="POST" data-netlify="true">
-        <input type="hidden" name="form-name" value="contact"> 
-        <h3>Contact Form</h3>
-        <h4>Contact us for a custom quote</h4>
-        <fieldset>
-          <input name="name" placeholder="Your name" type="text" tabindex="1" required>
-        </fieldset>
-        <fieldset>
-          <input name="email" placeholder="Your Email Address" type="email" tabindex="2" required>
-        </fieldset>
-        <fieldset>
-          <input name="phone" placeholder="Your Phone Number (optional)" type="tel" tabindex="3">
-        </fieldset>
-        <fieldset>
-          <textarea name="message" placeholder="Type your message here...." tabindex="4" required></textarea>
-        </fieldset>
-        <fieldset>
-          <button type="submit" id="contact-submit">Submit</button>
-        </fieldset>
-      </form> -->
 
-      <form id="contact" name="contact" method="POST" data-netlify="true" data-netlify-recaptcha="true" action="thank-you.html">
-        <!-- Campo oculto obrigatório para Netlify -->
+      <form id="contact" name="contact" method="POST" data-netlify="true" data-netlify-recaptcha="true"
+        action="thank-you.html">
         <input type="hidden" name="form-name" value="contact">
-    
+
         <h3>formulário de Contato</h3>
         <h4>Sinta-se à vontade para entrar em contato :) !</h4>
-    
+
         <fieldset>
           <input name="name" placeholder="Seu Nome" type="text" tabindex="1" required>
         </fieldset>
@@ -475,38 +454,34 @@
         <fieldset>
           <textarea name="message" placeholder="Escreva sua mensagem aqui...." tabindex="4" required></textarea>
         </fieldset>
-    
-        <!-- Widget ReCAPTCHA -->
+
+
         <div class="recaptcha">
           <div data-netlify-recaptcha="true"></div>
         </div>
-    
+
         <fieldset>
           <button type="submit" id="contact-submit">Enviar</button>
         </fieldset>
       </form>
 
-
-      <div class="anim">
+      <div class="anim" id="paperplane">
         <div class="shape"></div>
-        <div class="paperplane">
+        <div class="paperplane" id="plane">
           <svg width="461" height="200" viewBox="0 0 472 168" xmlns="http://www.w3.org/2000/svg">
             <polygon fill="#85baff" class="morph2"
-              points='112.75 38.96, 184.14 0, 267.10 47.19, 322.40 78.64, 377.71 110.10, 433.02 141.56, 460.67 157.29, 425.88 145.46, 356.29 121.79, 286.71 98.13, 217.13 74.46, 112.75 38.96'>
+              points="112.75 38.96, 184.14 0, 267.10 47.19, 322.40 78.64, 377.71 110.10, 433.02 141.56, 460.67 157.29, 425.88 145.46, 356.29 121.79, 286.71 98.13, 217.13 74.46, 112.75 38.96">
             </polygon>
             <polygon fill="#338bff" class="morph"
-              points='112.74 38.93, 217.12 74.42, 286.70 98.08, 356.29 121.73, 425.88 145.39, 460.67 157.22, 443.59 156.64, 409.43 155.49, 358.20 153.75, 289.88 151.44, 221.56 149.13, 119.09 145.67'>
+              points="112.74 38.93, 217.12 74.42, 286.70 98.08, 356.29 121.73, 425.88 145.39, 460.67 157.22, 443.59 156.64, 409.43 155.49, 358.20 153.75, 289.88 151.44, 221.56 149.13, 119.09 145.67">
             </polygon>
-
-
-
             <polygon fill="#85baff" class="morph3"
-              points='0 100.51, 78.25 57.80, 192.98 87.65, 307.70 117.49, 384.19 137.39, 422.43 147.34, 460.67 157.29, 414.60 151.61, 368.54 145.93, 276.40 134.58, 138.20 117.54'>
+              points="0 100.51, 78.25 57.80, 192.98 87.65, 307.70 117.49, 384.19 137.39, 422.43 147.34, 460.67 157.29, 414.60 151.61, 368.54 145.93, 276.40 134.58, 138.20 117.54">
             </polygon>
           </svg>
-
         </div>
       </div>
+
   </section>
 
   <section id="rodape">
@@ -532,9 +507,10 @@
     </footer>
   </section>
 
-  <script src="anime.min.js"></script>
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/animejs/3.2.1/anime.min.js"></script>
+  <!-- <div id="interpolated-points" style="font-size: 1.5em; color: rgb(0, 0, 0);"></div> -->
   <script src="script.js"></script>
-  <!-- <div id="interpolated-points" style="font-size: 1.5em; color: black;"></div>  -->
 
 </body>
 
