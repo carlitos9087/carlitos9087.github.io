@@ -704,12 +704,12 @@ svg {
   }
   .content h2 {
     color: white;
-    font-size: large;
+    font-size: 32px;
     line-height: normal;
     margin-bottom: 10px;
 }
 .content span{
-font-size: small;
+font-size: medium;
 }
 
 }
