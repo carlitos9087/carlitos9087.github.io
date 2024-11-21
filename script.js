@@ -151,6 +151,8 @@ function togglePlane() {
   }
 }
 
+// Adiciona o evento ao clique no avião
+document.getElementById('paperplane').addEventListener('click', togglePlane);
 
 
 // Adiciona o evento ao clique no avião
@@ -162,10 +164,14 @@ menuIcon.addEventListener('click', () => {
   navMenu.classList.toggle('active');
 });
 
+
+
 // Fecha o menu ao clicar em um item de navegação
 navItems.forEach(item => {
   item.addEventListener('click', () => {
     navMenu.classList.remove('active');
   });
 });
+
+
 
