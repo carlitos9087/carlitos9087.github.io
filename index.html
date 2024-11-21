@@ -435,8 +435,8 @@
 
   <section id="contact">
     <div class="container">
-      <form id="contact" name="contact" method="POST" data-netlify="true">
-        <input type="hidden" name="form-name" value="contact"> <!-- Campo oculto -->
+      <!-- <form id="contact" name="contact" method="POST" data-netlify="true">
+        <input type="hidden" name="form-name" value="contact"> 
         <h3>Contact Form</h3>
         <h4>Contact us for a custom quote</h4>
         <fieldset>
@@ -453,6 +453,36 @@
         </fieldset>
         <fieldset>
           <button type="submit" id="contact-submit">Submit</button>
+        </fieldset>
+      </form> -->
+
+      <form id="contact" name="contact" method="POST" data-netlify="true" data-netlify-recaptcha="true" action="thank-you.html">
+        <!-- Campo oculto obrigatório para Netlify -->
+        <input type="hidden" name="form-name" value="contact">
+    
+        <h3>formulário de Contato</h3>
+        <h4>Sinta-se à vontade para entrar em contato :) !</h4>
+    
+        <fieldset>
+          <input name="name" placeholder="Seu Nome" type="text" tabindex="1" required>
+        </fieldset>
+        <fieldset>
+          <input name="email" placeholder="Seu endereço de email" type="email" tabindex="2" required>
+        </fieldset>
+        <fieldset>
+          <input name="phone" placeholder="Seu Telefone (optional)" type="tel" tabindex="3">
+        </fieldset>
+        <fieldset>
+          <textarea name="message" placeholder="Escreva sua mensagem aqui...." tabindex="4" required></textarea>
+        </fieldset>
+    
+        <!-- Widget ReCAPTCHA -->
+        <div class="recaptcha">
+          <div data-netlify-recaptcha="true"></div>
+        </div>
+    
+        <fieldset>
+          <button type="submit" id="contact-submit">Enviar</button>
         </fieldset>
       </form>
 
