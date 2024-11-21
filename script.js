@@ -154,13 +154,18 @@ function togglePlane() {
 
 
 // Adiciona o evento ao clique no avião
-document.getElementById('paperplane').addEventListener('click', togglePlane);
-
-
 const menuIcon = document.getElementById('menu-icon');
 const navMenu = document.getElementById('nav-menu');
+const navItems = document.querySelectorAll('.nav-item');
 
 menuIcon.addEventListener('click', () => {
   navMenu.classList.toggle('active');
+});
+
+// Fecha o menu ao clicar em um item de navegação
+navItems.forEach(item => {
+  item.addEventListener('click', () => {
+    navMenu.classList.remove('active');
+  });
 });
 
