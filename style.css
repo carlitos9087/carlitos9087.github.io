@@ -442,7 +442,7 @@ section#projects [title="project"] {
 section#projects .container{
   background-color: rgba(255, 255, 255, 0.134);
   margin: 3%;
-  padding: 3%;
+  padding: 5% 3%;
   border-radius: 20px;
 }
 
