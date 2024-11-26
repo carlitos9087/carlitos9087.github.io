@@ -112,17 +112,58 @@
   <section id="formacao">
     <div class="container">
       <div class="blackhole">
-        <svg viewBox="0 0 160 160" width="160" height="160">
+        <svg id="blackhole" viewBox="0 0 160 160" width="160" height="160">
           <circle cx="80" cy="80" r="50" />
-          <g transform=" matrix(0.866, -0.5, 0.25, 0.433, 80, 80)">
+          <g transform="matrix(0.866, -0.5, 0.25, 0.433, 80, 80)">
             <path d="M 0,70 A 65,70 0 0,0 65,0 5,5 0 0,1 75,0 75,70 0 0,1 0,70Z" fill="#FFF">
-              <animateTransform attributeName="transform" type="rotate" from="360 0 0" to="0 0 0" dur="1s"
+              <animateTransform id="rotation" attributeName="transform" type="rotate" from="360 0 0" to="0 0 0" dur="1s"
                 repeatCount="indefinite" />
             </path>
           </g>
           <path d="M 50,0 A 50,50 0 0,0 -50,0Z" transform="matrix(0.866, -0.5, 0.5, 0.866, 80, 80)" />
         </svg>
       </div>
+      
+      <script>
+        const rotation = document.getElementById('rotation');
+      
+        let isAnimating = false; // Evita múltiplos cliques simultâneos
+      
+        document.getElementById('blackhole').addEventListener('click', () => {
+          if (isAnimating) return;
+          isAnimating = true;
+      
+          let duration = 1; // Duração inicial (1 segundo)
+          const targetDuration = 0.5; // Duração ao dobrar a velocidade
+          const step = 1; // Alteração gradual por passo
+          const intervalTime = 300; // Intervalo entre ajustes (em ms)
+      
+          // Gradualmente acelera
+          const accelerate = setInterval(() => {
+            duration -= step;
+            if (duration <= targetDuration) {
+              duration = targetDuration;
+              clearInterval(accelerate);
+      
+              // Mantém a velocidade máxima por 0.5 segundos
+              setTimeout(() => {
+                // Gradualmente desacelera
+                const decelerate = setInterval(() => {
+                  duration += step;
+                  if (duration >= 1) {
+                    duration = 1;
+                    clearInterval(decelerate);
+                    isAnimating = false;
+                  }
+                  rotation.setAttribute('dur', `${duration}s`);
+                }, intervalTime);
+              }, 500); // Espera 0.5 segundos antes de desacelerar
+            }
+            rotation.setAttribute('dur', `${duration}s`);
+          }, intervalTime);
+        });
+      </script>
+      
 
       <div class="formacao">
         <h3>Formação</h3>
@@ -336,7 +377,7 @@
           CSS e JavaScript, com consumo da PokéAPI. 
           O projeto explora fundamentos essenciais de desenvolvimento web.</p>
         <div class="buttons">
-          <a href="/projetos/jogo_da_memoria/index.html " target="_blank" class="button">View</a>
+          <a href="/projetos/Pokedex/index.html " target="_blank" class="button">View</a>
           <a href="https://github.com/carlitos9087/carlitos9087.github.io/tree/main/projetos/Pokedex/index.html"
             class="button" target="_blank">Code</a>
         </div>

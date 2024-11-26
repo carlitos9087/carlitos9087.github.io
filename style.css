@@ -350,12 +350,15 @@ padding-top: 10px;
 
 }
 .blackhole svg{
-
   min-width: 300px;
-
+  
 }
 
-
+/* .blackhole:hover{
+  transform: scale(1.1);
+  opacity: 0.9;
+  transition: transform 0.3s ease;
+} */
 
 
 
@@ -415,6 +418,7 @@ section#projects [title="project"] {
 
 .project:hover {
   transform: scale(1.1);
+  
 }
 
 .project img {
@@ -682,7 +686,14 @@ fieldset {
 svg {
   max-width: 100%;
   height: auto;
+  transition: transform 0.3s ease;
 }
+svg:hover{
+  transform: scale(1.1);
+  opacity: 0.8;
+  
+}
+
 @media (max-width: 768px) {
   nav ul {
       flex-direction: column;
