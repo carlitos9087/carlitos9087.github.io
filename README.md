@@ -7,6 +7,10 @@ Este site é uma coleção dos meus projetos, experiências e habilidades. Aqui,
 ### Acesse o portfólio:
 🔗 [https://carlistosdev.netlify.app/](https://carlistosdev.netlify.app/)
 
+<a href="https://carlitosdev.netlify.app/#skills" target="_blank">
+          <img src="capa.png" alt="Project 3">
+</a>
+
 ## Sobre Mim
 
 Sou estudante de Análise e Desenvolvimento de Sistemas, com foco em desenvolvimento de software e análise de dados. Tenho experiência em programação, automação de processos e projetos de pesquisa em bioinformática. Estou sempre em busca de aprender novas tecnologias e aplicar soluções criativas para desafios técnicos.
