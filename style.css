@@ -143,18 +143,17 @@ a {
 
 
 #main {
-
-  background-image: url("img/pinguins3.gif");
+  background-image: url(img/pinguins3.gif);
   position: relative;
   width: 100%;
-  min-height: 100vh;
+  height: 100svh; 
   display: flex;
   align-items: center;
   background-size: cover;
   background-position: center;
   background-attachment: fixed;
-
 }
+
 
 
 section {

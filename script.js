@@ -227,3 +227,12 @@ document.addEventListener("DOMContentLoaded", () => {
   const elements = document.querySelectorAll(".animate");
   elements.forEach((el) => observer.observe(el));
 });
+
+function ajustarAltura() {
+  const alturaVisivel = window.innerHeight;
+  document.querySelector("#main").style.height = `${alturaVisivel}px`;
+}
+
+// Executa no carregamento e ao redimensionar a tela
+ajustarAltura();
+window.addEventListener("resize", ajustarAltura);
