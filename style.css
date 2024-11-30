@@ -882,3 +882,19 @@ flex-direction: column;
   }
 }
 
+
+
+
+.animate {
+  opacity: 0;
+  transform: translateY(50px);
+  transition: opacity 1.6s ease, transform 1.6s ease;
+}
+
+/* Estado ativo para animação */
+.animate.show {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+

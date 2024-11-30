@@ -210,3 +210,20 @@ navItems.forEach(item => {
 
 
 
+// script.js
+document.addEventListener("DOMContentLoaded", () => {
+  const observer = new IntersectionObserver((entries, observer) => {
+    entries.forEach((entry) => {
+      if (entry.isIntersecting) {
+        // Adiciona a classe para animar
+        entry.target.classList.add("show");
+        // Para observar o elemento (não será animado novamente)
+        observer.unobserve(entry.target);
+      }
+    });
+  });
+
+  // Seleciona todos os elementos a serem animados
+  const elements = document.querySelectorAll(".animate");
+  elements.forEach((el) => observer.observe(el));
+});
