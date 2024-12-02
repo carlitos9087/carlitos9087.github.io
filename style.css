@@ -59,7 +59,7 @@ nav {
   }
 
   nav {
-    display: none;
+    display: flex; /* Permite o uso de transições */
     flex-direction: column;
     background: #000000ad;
     position: absolute;
@@ -68,12 +68,15 @@ nav {
     width: 100%;
     padding: 10px;
 
-    
+    /* Para a animação */
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 0.3s ease-out;
   }
 
+
   nav.active {
-    display: flex;
-    
+    max-height: 300px; /* Altura suficiente para mostrar o menu */
   }
 
   nav a {
@@ -228,6 +231,7 @@ section#about p {
   align-content: stretch;
   align-items: flex-start;
   text-align: center;
+  opacity: 0;
 }
 
 #fundo {
@@ -252,6 +256,7 @@ section#about p {
   text-align: center;
   color: white;
   /*padding: 50px 50px; */
+  opacity: 0;
 }
 
 #hardskill #grid {
@@ -380,6 +385,8 @@ padding-top: 10px;
   margin-right: 10px;
   
 }
+
+
 }
 
 
@@ -663,7 +670,7 @@ fieldset {
 
 
 
-#contact .container {
+#contato .container {
   display: flex;
   align-items: center;
   gap: 40px;
@@ -861,6 +868,14 @@ flex-direction: column;
     align-content: center;
     align-items: center;
 }
+#contato{
+  padding: 5px 10px;
+  margin: 0;
+}
+form#contact{
+  padding: 20px;
+  min-width: 80%;
+}
 }
 
 
@@ -898,3 +913,49 @@ flex-direction: column;
 }
 
 
+
+
+
+
+
+/* Estilos base para animação */
+@keyframes slideInRight {
+  from {
+    transform: translateX(100%);
+    opacity: 0;
+  }
+  to {
+    transform: translateX(0);
+    opacity: 1;
+  }
+}
+
+@keyframes slideInLeft {
+  from {
+    transform: translateX(-100%);
+    opacity: 0;
+  }
+  to {
+    transform: translateX(0);
+    opacity: 1;
+  }
+}
+
+/* Animações aplicadas às seções */
+
+
+
+
+/* #hardskill, #softskill {
+  animation-fill-mode: forwards;
+} */
+
+/* #softskill.animate {
+  transform: translateX(-100%); 
+} */
+
+/* Estado final (quando a classe 'show' é adicionada) */
+/* .animate.show {
+  opacity: 1;
+  transform: translateX(0);
+} */

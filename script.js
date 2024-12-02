@@ -210,23 +210,6 @@ navItems.forEach(item => {
 
 
 
-// script.js
-document.addEventListener("DOMContentLoaded", () => {
-  const observer = new IntersectionObserver((entries, observer) => {
-    entries.forEach((entry) => {
-      if (entry.isIntersecting) {
-        // Adiciona a classe para animar
-        entry.target.classList.add("show");
-        // Para observar o elemento (não será animado novamente)
-        observer.unobserve(entry.target);
-      }
-    });
-  });
-
-  // Seleciona todos os elementos a serem animados
-  const elements = document.querySelectorAll(".animate");
-  elements.forEach((el) => observer.observe(el));
-});
 
 function ajustarAltura() {
   const alturaVisivel = window.innerHeight;
@@ -236,3 +219,34 @@ function ajustarAltura() {
 // Executa no carregamento e ao redimensionar a tela
 ajustarAltura();
 window.addEventListener("resize", ajustarAltura);
+
+
+function animateOnScroll() {
+  const hardskill = document.getElementById("hardskill");
+  const softskill = document.getElementById("softskill");
+
+  const triggerHeight = window.innerHeight / 1.3;
+
+  if (hardskill.getBoundingClientRect().top < triggerHeight) {
+    hardskill.style.animation = "slideInLeft 1s ease-out forwards";
+  }
+
+  if (softskill.getBoundingClientRect().top < triggerHeight) {
+    softskill.style.animation = "slideInRight 1s ease-out forwards";
+  }
+}
+window.addEventListener("scroll", animateOnScroll);
+
+document.addEventListener("DOMContentLoaded", () => {
+  const observer = new IntersectionObserver((entries, observer) => {
+    entries.forEach((entry) => {
+      if (entry.isIntersecting) {
+        entry.target.classList.add("show");
+        observer.unobserve(entry.target);
+      }
+    });
+  });
+
+  const elements = document.querySelectorAll(".animate");
+  elements.forEach((el) => observer.observe(el));
+});
