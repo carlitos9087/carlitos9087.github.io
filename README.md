@@ -5,7 +5,7 @@ Bem-vindo ao meu portfólio! 🎨🚀
 Este site é uma coleção dos meus projetos, experiências e habilidades. Aqui, você encontrará exemplos de trabalhos que desenvolvi, assim como um pouco sobre minha trajetória acadêmica e profissional. Sinta-se à vontade para explorar e conhecer mais sobre o que eu faço.
 
 ### Acesse o portfólio:
-🔗 [https://carlistosdev.netlify.app/](https://carlistosdev.netlify.app/)
+🔗 [https://carlitosdev.netlify.app/](https://carlitosdev.netlify.app/)
 
 <a href="https://carlitosdev.netlify.app/#skills" target="_blank">
           <img src="capa.png" alt="Project 3">
