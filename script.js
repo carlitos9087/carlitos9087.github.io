@@ -191,21 +191,28 @@ document.getElementById('paperplane').addEventListener('click', togglePlane);
 
 
 // Adiciona o evento ao clique no avião
-const menuIcon = document.getElementById('menu-icon');
 const navMenu = document.getElementById('nav-menu');
+const menuIcon = document.getElementById('menu-icon'); // Certifique-se de ter esse elemento no HTML
 const navItems = document.querySelectorAll('.nav-item');
 
-menuIcon.addEventListener('click', () => {
+// Abre/fecha o menu ao clicar no botão
+menuIcon.addEventListener('click', (event) => {
+  event.stopPropagation(); // Evita que o clique no botão feche o menu
   navMenu.classList.toggle('active');
 });
 
-
-
 // Fecha o menu ao clicar em um item de navegação
-navItems.forEach(item => {
+navItems.forEach((item) => {
   item.addEventListener('click', () => {
     navMenu.classList.remove('active');
   });
+});
+
+// Fecha o menu ao clicar fora dele
+document.addEventListener('click', (event) => {
+  if (!navMenu.contains(event.target) && event.target !== menuIcon) {
+    navMenu.classList.remove('active');
+  }
 });
 
 

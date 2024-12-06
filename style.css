@@ -9,7 +9,7 @@ header {
   top: -2px;
   left: 0;
   width: 100%;
-  background: #000000ad;
+  background: #000000f2;
   padding: 14px 20px;
   display: flex;
   justify-content: space-between;
@@ -25,6 +25,8 @@ body{
   margin: 0;
   padding: 0;
   border: 0;
+  overflow-x: hidden;
+  
 }
 header a {
   color: white;
@@ -61,7 +63,7 @@ nav {
   nav {
     display: flex; /* Permite o uso de transições */
     flex-direction: column;
-    background: #000000ad;
+    background: #000000f2;
     position: absolute;
     top: 50px;
     left: 0;
@@ -76,7 +78,7 @@ nav {
 
 
   nav.active {
-    max-height: 300px; /* Altura suficiente para mostrar o menu */
+    max-height: 400px; /* Altura suficiente para mostrar o menu */
   }
 
   nav a {
@@ -914,14 +916,9 @@ form#contact{
 
 
 
-
-
-
-
-/* Estilos base para animação */
 @keyframes slideInRight {
   from {
-    transform: translateX(100%);
+    transform: translateX(50vw); /* 50% da largura da janela */
     opacity: 0;
   }
   to {
@@ -932,7 +929,7 @@ form#contact{
 
 @keyframes slideInLeft {
   from {
-    transform: translateX(-100%);
+    transform: translateX(-50vw); /* 50% da largura da janela */
     opacity: 0;
   }
   to {
